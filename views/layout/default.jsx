@@ -6,9 +6,17 @@ function DefaultLayout(props) {
       <head>
         <title>{props.title}</title>
       </head>
-      <body>{props.children}</body>
+      <body style={globalStyle}>{props.children}</body>
     </html>
   );
 }
+
+const globalStyle = {
+  width: '100%',
+  height: '100%',
+  margin: 0,
+  padding: 0,
+  boxSizing: 'border-box',
+};
 
 module.exports = DefaultLayout;

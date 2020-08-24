@@ -1,4 +1,5 @@
 const React = require('react');
+
 const DefaultLayout = require('./layout/default');
 const Header = require('./components/header');
 
